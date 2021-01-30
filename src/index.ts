@@ -1,6 +1,5 @@
 import faker from 'faker';
-import {  } from 'googlemaps'
- 
+
 class Student {
     firstName: string;
     lastName: string;
@@ -12,16 +11,12 @@ class Student {
 }
 
 
-let map: google.maps.Map;
-
-function initMap(): void {
-  map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
-    center: { lat: -34.397, lng: 150.644 },
+new google.maps.Map(document.getElementById("map_canvas"), {
+    center: { lat: 0, lng: 0 },
     zoom: 8,
   });
-}
 
-initMap()
+
 // function initialize () {
 //     let mapOptions = {
 //         center: new google.maps.LatLng(44, 44),

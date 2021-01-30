@@ -136,19 +136,13 @@ function () {
   return Student;
 }();
 
-var map;
-
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: {
-      lat: -34.397,
-      lng: 150.644
-    },
-    zoom: 8
-  });
-}
-
-initMap(); // function initialize () {
+new google.maps.Map(document.getElementById("map_canvas"), {
+  center: {
+    lat: 0,
+    lng: 0
+  },
+  zoom: 8
+}); // function initialize () {
 //     let mapOptions = {
 //         center: new google.maps.LatLng(44, 44),
 //         zoom: 8,
@@ -194,7 +188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62283" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62480" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
