@@ -1,20 +1,20 @@
 import faker from 'faker';
 
-class Student {
-    firstName: string;
-    lastName: string;
-    location: location;
+import { student } from './student'
+import { internship } from './internship'
 
-    fullName () {
-        return (`${this.firstName} ${this.lastName}`);
-    }
-}
+const map = new google.maps.Map(document.getElementById("map_canvas"), {
+    center: { lat: 49.2827, lng: -123.1207 },
+    zoom: 3
+});
 
 
-new google.maps.Map(document.getElementById("map_canvas"), {
-    center: { lat: 0, lng: 0 },
-    zoom: 8,
-  });
+let newStudent = new student;
+let newInternship = new internship;
+
+newStudent.createMarker(map);
+newInternship.createMarker(map);
+
 
 
 // function initialize () {
@@ -26,18 +26,3 @@ new google.maps.Map(document.getElementById("map_canvas"), {
 
 //     let map = new google.maps.Map(document.getElementById('map_canvas'))
 // }
-
-class Internship {
-    businessName: string;
-    location: location;
-
-
-}
-
-interface location {
-    lat: number;
-    lon: number;
-}
-
-
-console.log('this is woring!');
