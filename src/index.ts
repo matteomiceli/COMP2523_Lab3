@@ -4,8 +4,8 @@ import { student } from './student'
 import { internship } from './internship'
 
 const map = new google.maps.Map(document.getElementById("map_canvas"), {
-    center: { lat: 49.2827, lng: -123.1207 },
-    zoom: 3
+    center: { lat: 0, lng: 0},
+    zoom: 2
 });
 
 

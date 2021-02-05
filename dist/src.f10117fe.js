@@ -116294,10 +116294,10 @@ var internship_1 = require("./internship");
 
 var map = new google.maps.Map(document.getElementById("map_canvas"), {
   center: {
-    lat: 49.2827,
-    lng: -123.1207
+    lat: 0,
+    lng: 0
   },
-  zoom: 3
+  zoom: 2
 });
 var newStudent = new student_1.student();
 var newInternship = new internship_1.internship();
@@ -116310,7 +116310,7 @@ newInternship.createMarker(map); // function initialize () {
 //     }
 //     let map = new google.maps.Map(document.getElementById('map_canvas'))
 // }
-},{"./student":"src/student.ts","./internship":"src/internship.ts"}],"../../../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./student":"src/student.ts","./internship":"src/internship.ts"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -116338,7 +116338,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58701" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "32909" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -116514,5 +116514,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js","src/index.ts"], null)
+},{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js","src/index.ts"], null)
 //# sourceMappingURL=/src.f10117fe.js.map
